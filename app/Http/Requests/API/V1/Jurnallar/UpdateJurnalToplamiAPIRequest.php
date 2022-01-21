@@ -1,0 +1,31 @@
+<?php
+
+namespace App\Http\Requests\API\V1\Jurnallar;
+
+use App\Models\V1\Jurnallar\JurnalToplami;
+use InfyOm\Generator\Request\APIRequest;
+
+class UpdateJurnalToplamiAPIRequest extends APIRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return true;
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        $rules = JurnalToplami::$rules;
+        
+        return $rules;
+    }
+}

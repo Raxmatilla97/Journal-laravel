@@ -15,7 +15,7 @@ class CreateJurnalToplamlariTable extends Migration
     public function up()
     {
         Schema::create('jurnal_toplamlari', function (Blueprint $table) {
-            $table->id('jurnal_toplami_id');
+            $table->id('id');
             $table->string('title');
             $table->string('slug');
             $table->string('image')->nullable();

@@ -36,7 +36,7 @@ class JurnalToplami extends Model
     protected $dates = ['deleted_at'];
 
 
-    protected $primaryKey = 'jurnal_toplami_id';
+    protected $primaryKey = 'id';
 
     public $fillable = [
         'title',

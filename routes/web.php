@@ -45,3 +45,8 @@ Route::resource('testswags', App\Http\Controllers\TestswagController::class);
 Route::group(['prefix' => 'v1.jurnallar'], function () {
     Route::resource('jurnalToplamlari', App\Http\Controllers\V1\Jurnallar\JurnalToplamiController::class, ["as" => 'v1.jurnallar']);
 });
+
+
+Route::group(['prefix' => 'v1.jurnallar'], function () {
+    Route::resource('jurnallar', App\Http\Controllers\V1\Jurnallar\JurnallarController::class, ["as" => 'v1.jurnallar']);
+});

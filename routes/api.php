@@ -30,3 +30,8 @@ Route::resource('testswags', App\Http\Controllers\API\TestswagAPIController::cla
 Route::group(['prefix' => 'v1.jurnallar'], function () {
     Route::resource('jurnal_toplamlari', App\Http\Controllers\API\V1\Jurnallar\JurnalToplamiAPIController::class);
 });
+
+
+Route::group(['prefix' => 'v1.jurnallar'], function () {
+    Route::resource('jurnallar', App\Http\Controllers\API\V1\Jurnallar\JurnallarAPIController::class);
+});
